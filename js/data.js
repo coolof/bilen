@@ -26,7 +26,7 @@ function showInfo(data, tabletop) {
     $('.car__place__comment').hide();
   }
 
-  $('.car__data__date').text(latest.Timestamp);
+  $('.car__data__date').text(latest.Tidstämpel);
   $('.car__data__user').text(latest.Vem);
 
   if(latest.Lat && latest.Long) {
@@ -39,7 +39,7 @@ function showInfo(data, tabletop) {
     $('.car__place__pos .btn').hide();
   }
 
-  console.log(latest.Var, latest.Kommentar, latest.Timestamp, latest.Vem, latest.Lat, latest.Long);
+  console.log(latest.Var, latest.Kommentar, latest.Tidstämpel, latest.Vem, latest.Lat, latest.Long);
 
   $('.loading').fadeOut();
 }

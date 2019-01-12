@@ -284,12 +284,12 @@ select {
   display: inline-block;
   width: auto;
   height: 3.5rem;
-  line-height: 3.375rem;
+  line-height: 3.5rem;
   color: #000;
   font-size: 1rem;
-  padding: 0.125rem 1.5rem 0 4rem;
+  padding: 0 1.5rem 0 3.875rem;
   background: transparent url("../img/map.svg") 1.5rem center no-repeat;
-  box-shadow: inset 0px 0px 0px 2px #000;
+  border: 2px solid #000;
 }
 
 /* line 67, ../sass/_forms.scss */
