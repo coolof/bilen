@@ -55,10 +55,10 @@ select {
     display: inline-block;
     width: auto;
     height: rem(56);
-    line-height: rem(56);
+    line-height: rem(54);
     color: #000;
     font-size: 1rem;
-    padding: 0 1.5rem 0 rem(62);
+    padding: 0 1.5rem rem(2) rem(62);
     background: transparent url('../img/map.svg') 1.5rem center no-repeat;
     border: 2px solid #000;
   }

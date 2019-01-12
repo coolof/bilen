@@ -284,10 +284,10 @@ select {
   display: inline-block;
   width: auto;
   height: 3.5rem;
-  line-height: 3.5rem;
+  line-height: 3.375rem;
   color: #000;
   font-size: 1rem;
-  padding: 0 1.5rem 0 3.875rem;
+  padding: 0 1.5rem 0.125rem 3.875rem;
   background: transparent url("../img/map.svg") 1.5rem center no-repeat;
   border: 2px solid #000;
 }
@@ -345,22 +345,23 @@ input[type="submit"] {
   width: 100%;
   text-align: center;
   margin-top: auto;
+  margin-bottom: 1rem;
 }
-/* line 10, ../sass/_current.scss */
+/* line 11, ../sass/_current.scss */
 .car__place {
   margin-bottom: 1.5rem;
 }
-/* line 13, ../sass/_current.scss */
+/* line 14, ../sass/_current.scss */
 .car__place__name {
   margin-bottom: 1.25rem;
 }
-/* line 18, ../sass/_current.scss */
+/* line 19, ../sass/_current.scss */
 .car__data {
   position: relative;
   font-size: 1rem;
   line-height: 1.5rem;
 }
-/* line 23, ../sass/_current.scss */
+/* line 24, ../sass/_current.scss */
 .car__data:before {
   content: '';
   display: block;
@@ -369,12 +370,12 @@ input[type="submit"] {
   background-color: #000;
   margin: 0 auto 1.5rem;
 }
-/* line 33, ../sass/_current.scss */
+/* line 34, ../sass/_current.scss */
 .car__pos {
   margin-top: 2.5rem;
 }
 
-/* line 38, ../sass/_current.scss */
+/* line 39, ../sass/_current.scss */
 .change {
   width: 100%;
   margin-top: auto;
