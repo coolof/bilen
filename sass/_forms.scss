@@ -91,7 +91,7 @@ input[type="checkbox"] {
   }
 
   &:checked:before {
-    transform: translateY(-50%) translateX(rem(26));
+    transform: translateY(-50%) translateX(rem(27));
     background-color: rgba(#fff, 1);
     background-position: right center;
   }

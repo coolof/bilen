@@ -321,7 +321,7 @@ input[type="checkbox"]:before {
 }
 /* line 93, ../sass/_forms.scss */
 input[type="checkbox"]:checked:before {
-  transform: translateY(-50%) translateX(1.625rem);
+  transform: translateY(-50%) translateX(1.6875rem);
   background-color: white;
   background-position: right center;
 }
