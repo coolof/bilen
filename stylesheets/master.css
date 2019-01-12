@@ -83,12 +83,15 @@ html {
 
 /* line 26, ../sass/_foundation.scss */
 body {
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
   font-family: "Alegreya Sans", sans-serif;
   font-size: 1.25rem;
   line-height: 1.75rem;
+  background-color: #E2BAA0;
 }
 
-/* line 32, ../sass/_foundation.scss */
+/* line 37, ../sass/_foundation.scss */
 h1 {
   font-family: "Playfair Display", serif;
   font-size: 3rem;
@@ -97,7 +100,7 @@ h1 {
   font-weight: bold;
 }
 
-/* line 40, ../sass/_foundation.scss */
+/* line 45, ../sass/_foundation.scss */
 h2 {
   font-size: 1.5rem;
   line-height: 1.2;
@@ -105,23 +108,23 @@ h2 {
   margin-bottom: 1rem;
 }
 
-/* line 47, ../sass/_foundation.scss */
+/* line 52, ../sass/_foundation.scss */
 .word {
   display: inline-block;
   white-space: nowrap;
 }
 
-/* line 52, ../sass/_foundation.scss */
+/* line 57, ../sass/_foundation.scss */
 .letter {
   display: inline-block;
   opacity: 0;
 }
-/* line 56, ../sass/_foundation.scss */
+/* line 61, ../sass/_foundation.scss */
 .letter--space {
   width: 0.2em;
 }
 
-/* line 61, ../sass/_foundation.scss */
+/* line 66, ../sass/_foundation.scss */
 .loading {
   position: fixed;
   z-index: 200;
@@ -135,7 +138,7 @@ h2 {
   align-items: center;
   justify-content: center;
 }
-/* line 75, ../sass/_foundation.scss */
+/* line 80, ../sass/_foundation.scss */
 .loading__car {
   font-size: 4rem;
   line-height: 1;
@@ -151,11 +154,11 @@ h2 {
     transform: translateY(-3rem);
   }
 }
-/* line 92, ../sass/_foundation.scss */
+/* line 97, ../sass/_foundation.scss */
 .app {
   height: 100%;
 }
-/* line 95, ../sass/_foundation.scss */
+/* line 100, ../sass/_foundation.scss */
 .app__header {
   position: fixed;
   left: 0;
@@ -167,18 +170,18 @@ h2 {
   align-items: center;
   justify-content: flex-start;
 }
-/* line 107, ../sass/_foundation.scss */
+/* line 112, ../sass/_foundation.scss */
 .app__header .back {
   width: 3rem;
   height: 3.5rem;
   background: transparent url("../img/back.svg") center center no-repeat;
   display: none;
 }
-/* line 114, ../sass/_foundation.scss */
+/* line 119, ../sass/_foundation.scss */
 .change-screen .app__header .back {
   display: block;
 }
-/* line 119, ../sass/_foundation.scss */
+/* line 124, ../sass/_foundation.scss */
 .app__header .user {
   position: absolute;
   left: 50%;
@@ -190,7 +193,7 @@ h2 {
   line-height: 3.3125rem;
   padding-top: 0.1875rem;
 }
-/* line 132, ../sass/_foundation.scss */
+/* line 137, ../sass/_foundation.scss */
 .app__screen {
   padding: 4rem 2rem 0;
   height: 100%;
@@ -199,7 +202,7 @@ h2 {
   align-items: flex-start;
   justify-content: flex-start;
 }
-/* line 141, ../sass/_foundation.scss */
+/* line 146, ../sass/_foundation.scss */
 .app__screen.active {
   display: flex;
 }
@@ -257,16 +260,17 @@ select {
   color: #fff;
   font-family: "Alegreya Sans", sans-serif;
   font-size: 1.25rem;
+  font-weight: bold;
   text-align: center;
   border-radius: 2rem;
   padding: 0 2rem;
 }
-/* line 49, ../sass/_forms.scss */
+/* line 50, ../sass/_forms.scss */
 .btn:focus {
   outline: none;
 }
 
-/* line 54, ../sass/_forms.scss */
+/* line 55, ../sass/_forms.scss */
 button,
 input[type="submit"] {
   font-family: "Alegreya Sans", sans-serif;
@@ -368,9 +372,4 @@ input[type="submit"] {
 /* line 21, ../sass/_change.scss */
 .app__screen--change .btn {
   margin-top: 2rem;
-}
-
-/* line 8, ../sass/master.scss */
-body {
-  background-color: #44aaff;
 }

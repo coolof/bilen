@@ -24,9 +24,14 @@ html {
 }
 
 body {
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+
   font-family: $font;
   font-size: rem(20);
   line-height: rem(28);
+
+  background-color: #E2BAA0;
 }
 
 h1 {
