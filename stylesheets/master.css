@@ -92,15 +92,26 @@ body {
 }
 
 /* line 37, ../sass/_foundation.scss */
+a {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* line 42, ../sass/_foundation.scss */
 h1 {
   font-family: "Playfair Display", serif;
   font-size: 3rem;
-  line-height: 4rem;
+  line-height: 3.5rem;
   letter-spacing: 1px;
   font-weight: bold;
 }
+/* line 49, ../sass/_foundation.scss */
+h1.long {
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
 
-/* line 45, ../sass/_foundation.scss */
+/* line 55, ../sass/_foundation.scss */
 h2 {
   font-size: 1.5rem;
   line-height: 1.2;
@@ -108,23 +119,23 @@ h2 {
   margin-bottom: 1rem;
 }
 
-/* line 52, ../sass/_foundation.scss */
+/* line 62, ../sass/_foundation.scss */
 .word {
   display: inline-block;
   white-space: nowrap;
 }
 
-/* line 57, ../sass/_foundation.scss */
+/* line 67, ../sass/_foundation.scss */
 .letter {
   display: inline-block;
   opacity: 0;
 }
-/* line 61, ../sass/_foundation.scss */
+/* line 71, ../sass/_foundation.scss */
 .letter--space {
   width: 0.2em;
 }
 
-/* line 66, ../sass/_foundation.scss */
+/* line 76, ../sass/_foundation.scss */
 .loading {
   position: fixed;
   z-index: 200;
@@ -138,7 +149,7 @@ h2 {
   align-items: center;
   justify-content: center;
 }
-/* line 80, ../sass/_foundation.scss */
+/* line 90, ../sass/_foundation.scss */
 .loading__car {
   font-size: 4rem;
   line-height: 1;
@@ -154,11 +165,11 @@ h2 {
     transform: translateY(-3rem);
   }
 }
-/* line 97, ../sass/_foundation.scss */
+/* line 107, ../sass/_foundation.scss */
 .app {
   height: 100%;
 }
-/* line 100, ../sass/_foundation.scss */
+/* line 110, ../sass/_foundation.scss */
 .app__header {
   position: fixed;
   left: 0;
@@ -170,18 +181,18 @@ h2 {
   align-items: center;
   justify-content: flex-start;
 }
-/* line 112, ../sass/_foundation.scss */
+/* line 122, ../sass/_foundation.scss */
 .app__header .back {
   width: 3rem;
   height: 3.5rem;
   background: transparent url("../img/back.svg") center center no-repeat;
   display: none;
 }
-/* line 119, ../sass/_foundation.scss */
+/* line 129, ../sass/_foundation.scss */
 .change-screen .app__header .back {
   display: block;
 }
-/* line 124, ../sass/_foundation.scss */
+/* line 134, ../sass/_foundation.scss */
 .app__header .user {
   position: absolute;
   left: 50%;
@@ -193,7 +204,7 @@ h2 {
   line-height: 3.3125rem;
   padding-top: 0.1875rem;
 }
-/* line 137, ../sass/_foundation.scss */
+/* line 147, ../sass/_foundation.scss */
 .app__screen {
   padding: 4rem 2rem 0;
   height: 100%;
@@ -202,7 +213,7 @@ h2 {
   align-items: flex-start;
   justify-content: flex-start;
 }
-/* line 146, ../sass/_foundation.scss */
+/* line 156, ../sass/_foundation.scss */
 .app__screen.active {
   display: flex;
 }

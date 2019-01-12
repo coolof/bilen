@@ -34,12 +34,22 @@ body {
   background-color: #E2BAA0;
 }
 
+a {
+  color: #000;
+  text-decoration: underline;
+}
+
 h1 {
   font-family: $fontSerif;
   font-size: rem(48);
-  line-height: rem(64);
+  line-height: rem(56);
   letter-spacing: 1px;
   font-weight: bold;
+
+  &.long {
+    font-size: rem(40);
+    line-height: rem(48);
+  }
 }
 
 h2 {

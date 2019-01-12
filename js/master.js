@@ -29,6 +29,29 @@ $(document).ready(function() {
     $('.user-modal').show();
   });
 
+  /* Get location */
+  var latitude = '';
+  var longitude = '';
+  function getLocation() {
+    function success(position) {
+      latitude  = position.coords.latitude;
+      longitude = position.coords.longitude;
+
+      $('#pos-lat').val(latitude);
+      $('#pos-long').val(longitude);
+
+      console.log(latitude, longitude);
+    }
+
+    function error() {
+      alert('Kunde inte hitta din position 😭');
+    }
+
+    navigator.geolocation.getCurrentPosition(success, error);
+  }
+
+  getLocation();
+
   /* Wrap title letters */
   /*$('h1').each(function() {
     var letters = $(this).text().split('');
@@ -66,6 +89,8 @@ $(document).ready(function() {
     $('.app__screen--current').removeClass('active');
     $('.app__screen--change').addClass('active');
     $('body').addClass('change-screen');
+
+    getLocation();
   });
   $('.back').on('click', function() {
     $('.app__screen--current').addClass('active');
