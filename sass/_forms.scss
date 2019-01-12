@@ -67,6 +67,7 @@ select {
 input[type="checkbox"] {
   -webkit-appearance: none;
   appearance: none;
+  display: block;
   position: relative;
   width: rem(64);
   height: rem(40);
@@ -76,6 +77,7 @@ input[type="checkbox"] {
 
   &:before {
     content: '';
+    display: block;
     position: absolute;
     left: rem(4);
     top: rem(4);
