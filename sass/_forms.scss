@@ -64,6 +64,40 @@ select {
   }
 }
 
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  position: relative;
+  width: rem(64);
+  height: rem(40);
+  border-radius: rem(20);
+  background-color: #000;
+  margin: 0;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: rem(4);
+    top: rem(4);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 0px 2px #fff;
+    background: rgba(#fff, 0) url('../img/toggle-icons.svg') left center no-repeat;
+    transition: all 0.2s ease;
+  }
+
+  &:checked:before {
+    left: rem(28);
+    background-color: rgba(#fff, 1);
+    background-position: right center;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
 a.btn {
   text-decoration: none;
 }

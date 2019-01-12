@@ -9,16 +9,29 @@
   //Hide elements till needed
   .form-place input,
   textarea,
-  .btn {
+  .btn,
+  .form-pos {
     display: none;
   }
 
   .form-place input,
-  textarea {
+  textarea,
+  .place-pos {
     margin-top: 1rem;
   }
 
   .btn {
     margin-top: 2rem;
+  }
+
+  .place-pos {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+
+    input {
+      margin-right: 1rem;
+    }
   }
 }

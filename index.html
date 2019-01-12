@@ -75,8 +75,11 @@
         <select name="place-custom" id="place-standard">
           <option value="select" disabled selected>Välj en plats</option>
           <option value="sjon">Sjön</option>
-          <option value="mellangatan">Mellangatan</option>
-          <option value="kolonin">Kolonin</option>
+          <option value="mellangatan">Mellangatan 1 (Mån)</option>
+          <option value="mellangatan">Mellangatan 2 (Fre)</option>
+          <option value="mellangatan">Mellangatan 3 (Mån)</option>
+          <option value="kolonin">Kolonin 1 (Mån)</option>
+          <option value="kolonin">Kolonin 2 (Fre)</option>
           <option value="other">Annan</option>
         </select>
         <input id="place-entry" type="text" name="entry.1807182904" placeholder="Ange plats">
@@ -86,6 +89,13 @@
       <input id="pos-long" type="hidden" name="entry.1198813886">
 
       <textarea id="comment" name="entry.602888624" rows="3" placeholder="Kommentar"></textarea>
+
+      <div class="form-pos">
+        <div class="place-pos">
+          <input id="skipPos" name="skitPos" type="checkbox" checked>
+          <label for="skipPos">Skicka med position</label>
+        </div>
+      </div>
 
       <input id="submitForm" class="btn btn--big btn--send" type="submit" value="Okej!">
     </form>

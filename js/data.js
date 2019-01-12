@@ -36,7 +36,7 @@ function showInfo(data, tabletop) {
     $('.car__pos .btn').attr('href', mapsLink);
   }
   else {
-    $('.car__place__pos .btn').hide();
+    $('.car__pos').hide();
   }
 
   console.log(latest.Var, latest.Kommentar, latest.Tidstämpel, latest.Vem, latest.Lat, latest.Long);

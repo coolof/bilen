@@ -105,16 +105,35 @@ $(document).ready(function() {
     if($(this).val() == 'other') {
       $('#place-entry').show();
       $('#place-entry').val('');
+      $('#comment').hide();
+      $('.form-pos').hide();
     }
     else {
+      $('#place-entry').hide();
       $('#place-entry').val($(this).find('option:selected').text());
       $('#comment').show();
       $('#submitForm').show();
+      $('.form-pos').show();
     }
   });
   $('#place-entry').change(function() {
-    $('#comment').show();
-    $('#submitForm').show();
+    if($(this).val() == '') {
+
+    }
+    else {
+      $('#comment').show();
+      $('#submitForm').show();
+      $('.form-pos').show();
+    }
+  });
+  $('#skipPos').change(function() {
+    if($(this).is(':checked')) {
+      getLocation();
+    }
+    else {
+      $('#pos-lat').val('');
+      $('#pos-long').val('');
+    }
   });
 
   /* Debug form */
