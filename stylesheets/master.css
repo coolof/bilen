@@ -280,8 +280,25 @@ select {
 .btn:focus {
   outline: none;
 }
+/* line 54, ../sass/_forms.scss */
+.btn--outline {
+  display: inline-block;
+  width: auto;
+  height: 3.5rem;
+  line-height: 3.375rem;
+  color: #000;
+  font-size: 1rem;
+  padding: 0.125rem 1.5rem 0 4rem;
+  background: transparent url("../img/map.svg") 1.5rem center no-repeat;
+  box-shadow: inset 0px 0px 0px 2px #000;
+}
 
-/* line 55, ../sass/_forms.scss */
+/* line 67, ../sass/_forms.scss */
+a.btn {
+  text-decoration: none;
+}
+
+/* line 71, ../sass/_forms.scss */
 button,
 input[type="submit"] {
   font-family: "Alegreya Sans", sans-serif;
@@ -353,8 +370,12 @@ input[type="submit"] {
   background-color: #000;
   margin: 0 auto 1.5rem;
 }
+/* line 33, ../sass/_current.scss */
+.car__pos {
+  margin-top: 2.5rem;
+}
 
-/* line 34, ../sass/_current.scss */
+/* line 38, ../sass/_current.scss */
 .change {
   width: 100%;
   margin-top: auto;

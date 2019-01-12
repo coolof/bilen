@@ -33,7 +33,10 @@ function showInfo(data, tabletop) {
     var mapsLink = "https://www.google.com/maps/search/?api=1&query=" + latest.Lat + "," + latest.Long;
     console.log(mapsLink);
 
-    $('.car__place__name').wrap('<a href="' + mapsLink + '">');
+    $('.car__pos .btn').attr('href', mapsLink);
+  }
+  else {
+    $('.car__place__pos .btn').hide();
   }
 
   console.log(latest.Var, latest.Kommentar, latest.Timestamp, latest.Vem, latest.Lat, latest.Long);
