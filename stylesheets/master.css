@@ -310,7 +310,8 @@ input[type="checkbox"]:before {
   display: block;
   position: absolute;
   left: 0.25rem;
-  top: 0.25rem;
+  top: 50%;
+  transform: translateY(-50%);
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
@@ -318,23 +319,23 @@ input[type="checkbox"]:before {
   background: rgba(255, 255, 255, 0) url("../img/toggle-icons.svg") left center no-repeat;
   transition: all 0.2s ease;
 }
-/* line 92, ../sass/_forms.scss */
+/* line 93, ../sass/_forms.scss */
 input[type="checkbox"]:checked:before {
   left: 1.75rem;
   background-color: white;
   background-position: right center;
 }
-/* line 98, ../sass/_forms.scss */
+/* line 99, ../sass/_forms.scss */
 input[type="checkbox"]:focus {
   outline: none;
 }
 
-/* line 103, ../sass/_forms.scss */
+/* line 104, ../sass/_forms.scss */
 a.btn {
   text-decoration: none;
 }
 
-/* line 107, ../sass/_forms.scss */
+/* line 108, ../sass/_forms.scss */
 button,
 input[type="submit"] {
   font-family: "Alegreya Sans", sans-serif;

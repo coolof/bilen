@@ -80,7 +80,8 @@ input[type="checkbox"] {
     display: block;
     position: absolute;
     left: rem(4);
-    top: rem(4);
+    top: 50%;
+    transform: translateY(-50%);
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
