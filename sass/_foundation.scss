@@ -1,0 +1,145 @@
+$font: 'Alegreya Sans', sans-serif;
+$fontSerif: 'Playfair Display', serif;
+
+$currentBg: #A0E2E0;
+$changeBg: #A6EACE;
+
+@function rem($val) {
+  @return ($val / 16) * 1rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: $font;
+  font-size: rem(20);
+  line-height: rem(28);
+}
+
+h1 {
+  font-family: $fontSerif;
+  font-size: rem(48);
+  line-height: rem(64);
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.word {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.letter {
+  display: inline-block;
+  opacity: 0;
+
+  &--space {
+    width: 0.2em;
+  }
+}
+
+.loading {
+  position: fixed;
+  z-index: 200;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $currentBg;
+
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+
+  &__car {
+    font-size: rem(64);
+    line-height: 1;
+    animation: loading 2s infinite alternate ease;
+    margin-top: 1.5rem;
+  }
+}
+
+@keyframes loading {
+  form {
+    transform: translateY(0rem);
+  }
+  to {
+    transform: translateY(-3rem);
+  }
+}
+
+.app {
+  height: 100%;
+
+  &__header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 1rem 1rem;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+
+    .back {
+      width: rem(48);
+      height: rem(56);
+      background: transparent url('../img/back.svg') center center no-repeat;
+
+      display: none;
+
+      .change-screen & {
+        display: block;
+      }
+    }
+
+    .user {
+      position: absolute;
+      left: 50%;
+      top: 1rem;
+      transform: translateX(-50%);
+      padding-left: 2rem;
+      background: transparent url('../img/user.svg') left center no-repeat;
+      font-size: 1rem;
+      line-height: rem(56-3);
+      padding-top: rem(3);
+    }
+  }
+
+  &__screen {
+    padding: 4rem 2rem 0;
+    height: 100%;
+
+    display: none;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    &.active {
+      display: flex;
+    }
+  }
+}

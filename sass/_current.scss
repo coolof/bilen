@@ -1,0 +1,38 @@
+.app__screen--current {
+  background-color: $currentBg;
+}
+
+.car {
+  width: 100%;
+  text-align: center;
+  margin-top: auto;
+
+  &__place {
+    margin-bottom: 1.5rem;
+
+    &__name {
+      margin-bottom: rem(20);
+    }
+  }
+
+  &__data {
+    position: relative;
+    font-size: 1rem;
+    line-height: 1.5rem;
+
+    &:before {
+      content: '';
+      display: block;
+      width: 2rem;
+      height: 1px;
+      background-color: #000;
+      margin: 0 auto 1.5rem;
+    }
+  }
+}
+
+.change {
+  width: 100%;
+  margin-top: auto;
+  padding-bottom: rem(40);
+}

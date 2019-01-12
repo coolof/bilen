@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>NY-Barometern</title>
+
+  <link rel="apple-touch-icon" href="img/touch-icon.png">
+  <meta name="apple-mobile-web-app-title" content="NY-Barometern">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <script src="js/tabletop.min.js" charset="utf-8"></script>
+  <script src="js/data.js" charset="utf-8"></script>
+  <script src="js/js.cookie.js" charset="utf-8"></script>
+  <script src="js/anime.min.js" charset="utf-8"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/master.js" charset="utf-8"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheets/master.css">
+</head>
+<body>
+  <div class="loading">
+    <div class="loading__car">
+      🚘
+    </div>
+  </div>
+
+  <div class="app">
+    <div class="user-modal">
+      <div class="user-modal__inner">
+        <h2>Vad heter du?</h2>
+
+        <div class="user-modal__form">
+          <input id="name-input" type="text" name="name" placeholder="Namn">
+          <div class="btn btn--name-ok">Okej!</div>
+        </div>
+      </div>
+    </div>
+
+    <header class="app__header">
+      <div class="back"></div>
+      <div class="user"></div>
+    </header>
+
+    <div class="app__screen app__screen--current active" id="current">
+      <div class="car">
+        <div class="car__place">
+          <h1 class="car__place__name">Sjön</h1>
+          <p class="car__place__comment">Backat in på höger sida.</p>
+        </div>
+
+        <div class="car__data">
+          <div class="car__data__date">2018/01/11 - 20:30</div>
+          <div class="car__data__user">Olle</div>
+        </div>
+      </div>
+
+      <div class="change">
+        <div class="btn btn--big btn--change">Ändra plats</div>
+      </div>
+    </div>
+
+    <form class="app__screen app__screen--change" id="parking">
+      <input id="name" type="hidden" name="entry.1193361530" value="Olle">
+
+      <div class="form-place">
+        <select name="place-custom" id="place-standard">
+          <option value="select" disabled selected>Välj en plats</option>
+          <option value="sjon">Sjön</option>
+          <option value="mellangatan">Mellangatan</option>
+          <option value="kolonin">Kolonin</option>
+          <option value="other">Annan</option>
+        </select>
+        <input id="place-entry" type="text" name="entry.1807182904" placeholder="Ange plats">
+      </div>
+
+      <textarea id="comment" name="entry.602888624" rows="3" placeholder="Kommentar"></textarea>
+
+      <input id="submitForm" class="btn btn--big btn--send" type="submit" value="Okej!">
+    </form>
+  </div>
+</body>
+</html>

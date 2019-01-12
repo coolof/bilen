@@ -1,0 +1,24 @@
+.app__screen--change {
+  display: none;
+
+  background-color: $changeBg;
+  align-items: stretch;
+  justify-content: flex-end;
+  padding-bottom: rem(40);
+
+  //Hide elements till needed
+  .form-place input,
+  textarea,
+  .btn {
+    display: none;
+  }
+
+  .form-place select,
+  .form-place input {
+    margin-bottom: 1rem;
+  }
+
+  .btn {
+    margin-top: 2rem;
+  }
+}
